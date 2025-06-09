@@ -49,7 +49,7 @@ $: if (hue || hue === 0) {
       input[type="range"]
         -webkit-appearance none
         height 1.5rem
-        background-image var(--color-selection-bar)
+        background var(--color-selection-bar)
         transition background-image 0.15s ease-in-out
 
         /* Input Thumb */
