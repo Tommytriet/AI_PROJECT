@@ -153,33 +153,188 @@ export const navBarConfig: NavBarConfig = {
 };
 ```
 
-## 📝 Content Creation
+## 📝 Content Creation & Deployment
 
-### Writing Blog Posts
+### 🚀 Writing New Blog Posts (GitHub Actions Auto-Deploy)
 
-1. **Create new post**
-   ```bash
-   pnpm new-post "your-post-title"
-   ```
+Sau khi setup GitHub Actions, việc viết blog trở nên **cực kỳ đơn giản**:
 
-2. **Edit frontmatter**
-   ```yaml
-   ---
-   title: "Your Post Title"
-   published: 2025-06-08
-   description: "Post description for SEO"
-   image: "path/to/image.jpg"
-   tags: [AI, Machine Learning, Python]
-   category: "Tutorial"
-   draft: false
-   ---
-   ```
+#### **Bước 1: Tạo bài viết mới**
+Tạo file `.md` trong thư mục `src/content/posts/`:
 
-3. **Write content** in Markdown với support cho:
-   - Code blocks với syntax highlighting
-   - Math formulas: `$E = mc^2$` hoặc `$$\sum_{i=1}^n x_i$$`
-   - Images: `![Alt text](path/to/image)`
-   - Tables, lists, và more
+```bash
+# Tạo file bài viết mới
+touch src/content/posts/ten-bai-viet-moi.md
+```
+
+#### **Bước 2: Viết nội dung**
+```yaml
+---
+title: "Tiêu đề bài viết của bạn"
+published: 2025-06-09
+description: "Mô tả ngắn gọn về bài viết cho SEO"
+image: "path/to/image.jpg"          # Optional: ảnh đại diện
+tags: ["AI", "Machine Learning"]    # Tags cho bài viết
+category: "Tutorial"                # Category
+draft: false                        # false = publish, true = draft
+---
+
+# Nội dung bài viết
+
+Viết nội dung bằng **Markdown** ở đây...
+
+## Code Examples
+
+```python
+# Python code với syntax highlighting
+import numpy as np
+print("Hello AI World!")
+```
+
+## Math Formulas
+
+Inline math: $E = mc^2$
+
+Display math:
+$$\sum_{i=1}^n x_i = x_1 + x_2 + ... + x_n$$
+```
+
+#### **Bước 3: Deploy tự động**
+```bash
+# Chỉ cần 3 lệnh này!
+git add .
+git commit -m "Add new post: Tên bài viết"
+git push
+```
+
+#### **✨ Thế là xong!**
+- ⚡ **GitHub Actions** tự động detect push
+- 🔄 **Tự động build** Astro project với bài viết mới  
+- 🚀 **Tự động deploy** lên website
+- ⏱️ **2-3 phút** sau bài viết xuất hiện trên blog!
+
+### 🎯 Không cần làm gì thêm!
+
+- ❌ **Không cần** `pnpm build`
+- ❌ **Không cần** deploy manual
+- ❌ **Không cần** chạy server
+- ✅ **Chỉ cần** git push và chờ!
+
+### 📋 Content Guidelines
+
+**Frontmatter Template:**
+```yaml
+---
+title: "Tiêu đề SEO-friendly"
+published: 2025-06-09              # Ngày publish
+description: "Mô tả 150-160 ký tự cho SEO"
+image: "assets/images/post1.jpg"   # Optional thumbnail
+tags: ["AI", "Python", "Tutorial"] # 3-5 tags relevant
+category: "Tutorial"               # Main category
+draft: false                       # true để hidden
+---
+```
+
+**Content Support:**
+- ✅ **Markdown syntax** đầy đủ
+- ✅ **Code blocks** với 50+ languages
+- ✅ **Math formulas** với KaTeX (`$...$` và `$$...$$`)
+- ✅ **Images** với auto-optimization
+- ✅ **Tables, lists, quotes**
+- ✅ **Custom callouts** (`> [!NOTE]`, `> [!WARNING]`)
+
+### 🎨 Advanced Features
+
+**Code Examples với syntax highlighting:**
+
+```python
+# Python với AI/ML libraries
+import tensorflow as tf
+import numpy as np
+
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dense(10, activation='softmax')
+])
+```
+
+```javascript
+// JavaScript/TypeScript
+const predict = async (model, data) => {
+    const prediction = await model.predict(data);
+    return prediction.dataSync();
+};
+```
+
+**Math Formulas với KaTeX:**
+
+```markdown
+Inline: Neural network output $y = \sigma(Wx + b)$
+
+Display block:
+$$\text{Loss} = -\frac{1}{N}\sum_{i=1}^N \sum_{c=1}^C y_{i,c} \log(\hat{y}_{i,c})$$
+```
+
+**Callouts/Admonitions:**
+
+```markdown
+> [!NOTE]
+> Ghi chú quan trọng cho readers
+
+> [!WARNING]
+> Cảnh báo về potential issues
+
+> [!TIP]
+> Tips và tricks hữu ích
+```
+
+## 🎯 GitHub Actions Workflow
+
+### 📁 Cấu trúc Auto-Deploy
+
+```yaml
+# .github/workflows/static.yml
+name: Deploy static content to Pages
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@v4
+      - run: pnpm install
+      - run: pnpm run build
+      - uses: actions/deploy-pages@v4
+```
+
+### 🔄 Deploy Process
+
+1. **Push code** → **GitHub detects changes**
+2. **Actions trigger** → **Install dependencies** 
+3. **Build Astro** → **Generate static site**
+4. **Deploy Pages** → **Website live!**
+
+### ⚡ Workflow Features
+
+- ✅ **Auto-trigger** on push to main branch
+- ✅ **pnpm support** với correct version detection
+- ✅ **Error handling** và retry logic
+- ✅ **Build caching** for faster deploys
+- ✅ **Multi-environment** support (staging/production)
+
+### 📊 Monitoring Deploys
+
+**Theo dõi deployment:**
+1. Vào **GitHub repository** → **Actions tab**
+2. Xem **"Deploy static content to Pages"** workflow
+3. **Monitor progress**: Install → Build → Deploy
+4. **Check logs** nếu có errors
+5. **Website live** sau 2-3 phút thành công
 
 ### Code Examples
 
