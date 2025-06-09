@@ -11,13 +11,13 @@ const posts = await getCollection("posts", ({ data }) => {
 // Group posts by category
 const categories = new Map();
 
-posts.forEach((post) => {
+for (const post of posts) {
 	const category = post.data.category || "Uncategorized";
 	if (!categories.has(category)) {
 		categories.set(category, []);
 	}
-	categories.get(category).push(post);
-});
+	categories.get(category)!.push(post);
+}
 
 // Sort categories by post count (descending)
 const sortedCategories = Array.from(categories.entries()).sort(

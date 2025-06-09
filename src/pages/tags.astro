@@ -11,15 +11,15 @@ const posts = await getCollection("posts", ({ data }) => {
 // Group posts by tags
 const tags = new Map();
 
-posts.forEach((post) => {
+for (const post of posts) {
 	const postTags = post.data.tags || [];
-	postTags.forEach((tag) => {
+	for (const tag of postTags) {
 		if (!tags.has(tag)) {
 			tags.set(tag, []);
 		}
-		tags.get(tag).push(post);
-	});
-});
+		tags.get(tag)!.push(post);
+	}
+}
 
 // Sort tags by post count (descending)
 const sortedTags = Array.from(tags.entries()).sort(
