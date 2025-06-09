@@ -5,6 +5,9 @@
     "strictNullChecks": true,
     "allowJs": false,
     "declaration": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "plugins": [
       {
         "name": "@astrojs/ts-plugin"
@@ -20,5 +23,5 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "src/types/**/*"]
 }

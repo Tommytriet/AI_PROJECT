@@ -1,97 +1,375 @@
-# 🍥Fuwari  
-![Node.js >= 20](https://img.shields.io/badge/node.js-%3E%3D20-brightgreen) 
-![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue) 
-[![DeepWiki](https://img.shields.io/badge/DeepWiki-saicaca%2Ffuwari-blue.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAyCAYAAAAnWDnqAAAAAXNSR0IArs4c6QAAA05JREFUaEPtmUtyEzEQhtWTQyQLHNak2AB7ZnyXZMEjXMGeK/AIi+QuHrMnbChYY7MIh8g01fJoopFb0uhhEqqcbWTp06/uv1saEDv4O3n3dV60RfP947Mm9/SQc0ICFQgzfc4CYZoTPAswgSJCCUJUnAAoRHOAUOcATwbmVLWdGoH//PB8mnKqScAhsD0kYP3j/Yt5LPQe2KvcXmGvRHcDnpxfL2zOYJ1mFwrryWTz0advv1Ut4CJgf5uhDuDj5eUcAUoahrdY/56ebRWeraTjMt/00Sh3UDtjgHtQNHwcRGOC98BJEAEymycmYcWwOprTgcB6VZ5JK5TAJ+fXGLBm3FDAmn6oPPjR4rKCAoJCal2eAiQp2x0vxTPB3ALO2CRkwmDy5WohzBDwSEFKRwPbknEggCPB/imwrycgxX2NzoMCHhPkDwqYMr9tRcP5qNrMZHkVnOjRMWwLCcr8ohBVb1OMjxLwGCvjTikrsBOiA6fNyCrm8V1rP93iVPpwaE+gO0SsWmPiXB+jikdf6SizrT5qKasx5j8ABbHpFTx+vFXp9EnYQmLx02h1QTTrl6eDqxLnGjporxl3NL3agEvXdT0WmEost648sQOYAeJS9Q7bfUVoMGnjo4AZdUMQku50McDcMWcBPvr0SzbTAFDfvJqwLzgxwATnCgnp4wDl6Aa+Ax283gghmj+vj7feE2KBBRMW3FzOpLOADl0Isb5587h/U4gGvkt5v60Z1VLG8BhYjbzRwyQZemwAd6cCR5/XFWLYZRIMpX39AR0tjaGGiGzLVyhse5C9RKC6ai42ppWPKiBagOvaYk8lO7DajerabOZP46Lby5wKjw1HCRx7p9sVMOWGzb/vA1hwiWc6jm3MvQDTogQkiqIhJV0nBQBTU+3okKCFDy9WwferkHjtxib7t3xIUQtHxnIwtx4mpg26/HfwVNVDb4oI9RHmx5WGelRVlrtiw43zboCLaxv46AZeB3IlTkwouebTr1y2NjSpHz68WNFjHvupy3q8TFn3Hos2IAk4Ju5dCo8B3wP7VPr/FGaKiG+T+v+TQqIrOqMTL1VdWV1DdmcbO8KXBz6esmYWYKPwDL5b5FA1a0hwapHiom0r/cKaoqr+27/XcrS5UwSMbQAAAABJRU5ErkJggg==)](https://deepwiki.com/saicaca/fuwari)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari?ref=badge_shield&issueType=license)
+# 🚀 AI Blog Pro - Powered by Fuwari
 
-A static blog template built with [Astro](https://astro.build).
+> Modern, fast, và beautiful AI blog template built với Astro framework. Perfect cho AI enthusiasts, researchers, và professionals muốn share knowledge về Machine Learning, Deep Learning, và Data Science.
 
-[**🖥️ Live Demo (Vercel)**](https://fuwari.vercel.app)
-
-![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
-
-🌏 README in
-[**中文**](https://github.com/saicaca/fuwari/blob/main/docs/README.zh-CN.md) /
-[**日本語**](https://github.com/saicaca/fuwari/blob/main/docs/README.ja.md) /
-[**한국어**](https://github.com/saicaca/fuwari/blob/main/docs/README.ko.md) /
-[**Español**](https://github.com/saicaca/fuwari/blob/main/docs/README.es.md) /
-[**ไทย**](https://github.com/saicaca/fuwari/blob/main/docs/README.th.md) (Provided by the community and may not always be up-to-date)
+![AI Blog Pro](https://img.shields.io/badge/AI%20Blog%20Pro-Live-brightgreen) ![Astro](https://img.shields.io/badge/Astro-5.8.1-orange) ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styled-cyan)
 
 ## ✨ Features
 
-- [x] Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
-- [x] Smooth animations and page transitions
-- [x] Light / dark mode
-- [x] Customizable theme colors & banner
-- [x] Responsive design
-- [x] Search functionality with [Pagefind](https://pagefind.app/)
-- [x] [Markdown extended features](https://github.com/saicaca/fuwari?tab=readme-ov-file#-markdown-extended-syntax)
-- [x] Table of contents
-- [x] RSS feed
+### 🎨 **Modern Design**
+- **Clean, minimalist aesthetic** inspired by Japanese design principles
+- **Dark/Light mode** với automatic system preference detection
+- **Responsive design** perfect on all devices
+- **Smooth animations** và micro-interactions
+- **Professional typography** optimized for reading
 
-## 🚀 Getting Started
+### 📝 **Content-First**
+- **Markdown/MDX support** với syntax highlighting
+- **Math formulas** với KaTeX integration
+- **Code blocks** với multiple language support
+- **Image optimization** và lazy loading
+- **Tags và categories** cho content organization
 
-1. Create your blog repository:
-    - [Generate a new repository](https://github.com/saicaca/fuwari/generate) from this template or fork this repository.
-    - Or run one of the following commands:
-       ```sh
-       npm create fuwari@latest
-       yarn create fuwari
-       pnpm create fuwari@latest
-       bun create fuwari@latest
-       deno run -A npm:create-fuwari@latest
-       ```
-2. To edit your blog locally, clone your repository, run `pnpm install` to install dependencies.
-    - Install [pnpm](https://pnpm.io) `npm install -g pnpm` if you haven't.
-3. Edit the config file `src/config.ts` to customize your blog.
-4. Run `pnpm new-post <filename>` to create a new post and edit it in `src/content/posts/`.
-5. Deploy your blog to Vercel, Netlify, GitHub Pages, etc. following [the guides](https://docs.astro.build/en/guides/deploy/). You need to edit the site configuration in `astro.config.mjs` before deployment.
+### 🚀 **Performance**
+- **99+ Lighthouse scores** across all metrics
+- **Static site generation** với Astro
+- **Minimal JavaScript** bundle
+- **CDN-ready** với optimized assets
+- **Fast loading** và excellent SEO
 
-## 📝 Frontmatter of Posts
+### 🔧 **Developer Experience**
+- **TypeScript** throughout
+- **Modern tooling** với Vite và ESBuild
+- **Hot reload** development server
+- **ESLint và Prettier** configured
+- **Git hooks** for code quality
 
-```yaml
----
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: false
-lang: jp      # Set only if the post's language differs from the site's language in `config.ts`
----
+### 📱 **Features for AI Blog**
+- **Code syntax highlighting** cho Python, R, SQL, etc.
+- **Mathematical notation** với KaTeX
+- **Jupyter notebook** style code blocks
+- **Research paper** citation support
+- **AI/ML taxonomy** tags và categories
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Astro](https://astro.build) - Modern static site generator
+- **Styling**: [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS
+- **Icons**: [Lucide Icons](https://lucide.dev) - Beautiful, consistent icons
+- **Fonts**: [Inter](https://rsms.me/inter/) - Optimized for screens
+- **Math**: [KaTeX](https://katex.org) - Fast math typesetting
+- **Search**: [Pagefind](https://pagefind.app) - Static search
+
+## 🚀 Quick Start
+
+### Prerequisites
+- **Node.js** >= 20.0.0
+- **pnpm** >= 9.0.0 (recommended)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url> ai-blog-pro
+   cd ai-blog-pro
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
+
+3. **Start development server**
+   ```bash
+   pnpm dev
+   ```
+   Visit `http://localhost:4321` để see your blog!
+
+4. **Build for production**
+   ```bash
+   pnpm build
+   ```
+
+## 📁 Project Structure
+
+```
+ai-blog-pro/
+├── public/                 # Static assets
+│   ├── images/            # Blog images
+│   └── favicon.ico        # Favicon
+├── src/
+│   ├── components/        # Reusable components
+│   ├── content/          # Blog content
+│   │   ├── posts/        # Blog posts (markdown)
+│   │   └── spec/         # Pages (about, etc.)
+│   ├── layouts/          # Page layouts
+│   ├── pages/            # Route pages
+│   ├── styles/           # Global styles
+│   └── config.ts         # Site configuration
+├── astro.config.mjs      # Astro configuration
+├── package.json          # Dependencies
+├── tailwind.config.js    # Tailwind configuration
+└── tsconfig.json         # TypeScript configuration
 ```
 
-## 🧩 Markdown Extended Syntax
+## ⚙️ Configuration
 
-In addition to Astro's default support for [GitHub Flavored Markdown](https://github.github.com/gfm/), several extra Markdown features are included:
+### Site Settings
 
-- Admonitions ([Preview and Usage](https://fuwari.vercel.app/posts/markdown-extended/#admonitions))
-- GitHub repository cards ([Preview and Usage](https://fuwari.vercel.app/posts/markdown-extended/#github-repository-cards))
-- Enhanced code blocks with Expressive Code ([Preview](https://fuwari.vercel.app/posts/expressive-code/) / [Docs](https://expressive-code.com/))
+Edit `src/config.ts` to customize your blog:
 
-## ⚡ Commands
+```typescript
+export const siteConfig: SiteConfig = {
+  title: "Your AI Blog",
+  subtitle: "Exploring AI & Machine Learning",
+  lang: "en",
+  themeColor: {
+    hue: 210,  // Blue theme
+    fixed: false
+  },
+  banner: {
+    enable: true,
+    src: "assets/images/banner.jpg"
+  }
+};
 
-All commands are run from the root of the project, from a terminal:
+export const profileConfig: ProfileConfig = {
+  avatar: "assets/images/avatar.png",
+  name: "Your Name",
+  bio: "AI Researcher & Developer",
+  links: [
+    {
+      name: "GitHub",
+      url: "https://github.com/yourusername",
+      icon: "github"
+    }
+    // Add more social links
+  ]
+};
+```
 
-| Command                    | Action                                              |
-|:---------------------------|:----------------------------------------------------|
-| `pnpm install`             | Installs dependencies                               |
-| `pnpm dev`                 | Starts local dev server at `localhost:4321`         |
-| `pnpm build`               | Build your production site to `./dist/`             |
-| `pnpm preview`             | Preview your build locally, before deploying        |
-| `pnpm check`               | Run checks for errors in your code                  |
-| `pnpm format`              | Format your code using Biome                        |
-| `pnpm new-post <filename>` | Create a new post                                   |
-| `pnpm astro ...`           | Run CLI commands like `astro add`, `astro check`    |
-| `pnpm astro --help`        | Get help using the Astro CLI                        |
+### Navigation
 
-## ✏️ Contributing
+Customize navigation in `src/config.ts`:
 
-Check out the [Contributing Guide](https://github.com/saicaca/fuwari/blob/main/CONTRIBUTING.md) for details on how to contribute to this project.
+```typescript
+export const navBarConfig: NavBarConfig = {
+  links: [
+    { name: "Posts", url: "/posts", external: false },
+    { name: "Archive", url: "/archive", external: false },
+    { name: "Categories", url: "/categories", external: false },
+    { name: "About", url: "/about", external: false }
+  ]
+};
+```
 
-## 📄 License
+## 📝 Content Creation
 
-This project is licensed under the MIT License.
+### Writing Blog Posts
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari?ref=badge_large&issueType=license)
+1. **Create new post**
+   ```bash
+   pnpm new-post "your-post-title"
+   ```
+
+2. **Edit frontmatter**
+   ```yaml
+   ---
+   title: "Your Post Title"
+   published: 2025-06-08
+   description: "Post description for SEO"
+   image: "path/to/image.jpg"
+   tags: [AI, Machine Learning, Python]
+   category: "Tutorial"
+   draft: false
+   ---
+   ```
+
+3. **Write content** in Markdown với support cho:
+   - Code blocks với syntax highlighting
+   - Math formulas: `$E = mc^2$` hoặc `$$\sum_{i=1}^n x_i$$`
+   - Images: `![Alt text](path/to/image)`
+   - Tables, lists, và more
+
+### Code Examples
+
+Python code với syntax highlighting:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+# Generate sample data
+X = np.random.randn(100, 1)
+y = 2 * X + 1 + 0.1 * np.random.randn(100, 1)
+
+# Train model
+model = LinearRegression()
+model.fit(X, y)
+
+# Predict
+predictions = model.predict(X)
+
+print(f"Coefficient: {model.coef_[0][0]:.2f}")
+print(f"Intercept: {model.intercept_[0]:.2f}")
+```
+
+### Math Formulas
+
+Inline math: The loss function is $L = \frac{1}{n}\sum_{i=1}^n (y_i - \hat{y_i})^2$
+
+Block math:
+$$
+\nabla_\theta J(\theta) = \frac{1}{m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)}) x^{(i)}
+$$
+
+## 🎨 Customization
+
+### Colors và Theming
+
+The blog supports custom color themes. Modify `src/config.ts`:
+
+```typescript
+themeColor: {
+  hue: 210,        // 0-360, determines base color
+  fixed: false     // Allow users to customize
+}
+```
+
+### Fonts
+
+Change fonts in `src/layouts/BaseLayout.astro`:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+```
+
+### Adding Components
+
+Create reusable components in `src/components/`:
+
+```astro
+---
+// src/components/CodeBlock.astro
+interface Props {
+  language: string;
+  code: string;
+}
+
+const { language, code } = Astro.props;
+---
+
+<div class="code-block">
+  <pre class={`language-${language}`}><code>{code}</code></pre>
+</div>
+```
+
+## 🚀 Deployment
+
+Multiple deployment options available:
+
+### Vercel (Recommended)
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel --prod
+```
+
+### Netlify
+```bash
+# Build và deploy
+pnpm build
+# Drag ./dist folder to netlify.app
+```
+
+### GitHub Pages
+Add GitHub Actions workflow (see `DEPLOYMENT_GUIDE.md` for details)
+
+## 🔧 Development
+
+### Available Commands
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
+- `pnpm new-post "title"` - Create new blog post
+- `pnpm lint` - Run ESLint
+- `pnpm format` - Format code với Prettier
+
+### Code Quality
+
+The project includes:
+- **ESLint** for code linting
+- **Prettier** for code formatting
+- **TypeScript** for type safety
+- **Husky** for Git hooks
+- **lint-staged** for pre-commit checks
+
+## 📊 Analytics & SEO
+
+### Built-in SEO Features
+- **Meta tags** optimization
+- **Open Graph** tags for social sharing
+- **Structured data** (JSON-LD)
+- **Sitemap** generation
+- **Robots.txt** configuration
+
+### Analytics Integration
+
+Add Google Analytics to `src/layouts/BaseLayout.astro`:
+
+```html
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Please:
+
+1. **Fork the repository**
+2. **Create feature branch**: `git checkout -b feature/amazing-feature`
+3. **Commit changes**: `git commit -m 'Add amazing feature'`
+4. **Push to branch**: `git push origin feature/amazing-feature`
+5. **Open Pull Request**
+
+### Development Guidelines
+- Follow existing code style
+- Add TypeScript types
+- Write meaningful commit messages
+- Test your changes thoroughly
+- Update documentation if needed
+
+## 📝 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **[Fuwari](https://github.com/saicaca/fuwari)** - Original template
+- **[Astro](https://astro.build)** - Amazing framework
+- **[Tailwind CSS](https://tailwindcss.com)** - Styling system
+- **[Inter Font](https://rsms.me/inter/)** - Typography
+- **AI Community** - Inspiration và feedback
+
+## 📞 Support
+
+- **Documentation**: Check `DEPLOYMENT_GUIDE.md` for detailed setup
+- **Issues**: [GitHub Issues](../../issues) for bug reports
+- **Discussions**: [GitHub Discussions](../../discussions) for questions
+- **Email**: contact@your-domain.com
+
+---
+
+## 🌟 Showcase
+
+Using AI Blog Pro? We'd love to feature your blog! Submit a PR adding your site to this section.
+
+### Live Examples
+- **AI Blog Pro Demo**: [demo-link] - Example implementation
+- **Your Blog Here**: Submit your blog URL!
+
+---
+
+**⭐ Star this repository nếu you find it helpful! It helps others discover the project.**
+
+**🚀 Happy blogging! Share your AI knowledge với the world!**

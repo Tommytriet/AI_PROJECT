@@ -8,7 +8,7 @@ import {
 } from "@constants/constants.ts";
 
 export function getDefaultHue(): number {
-	const fallback = "250";
+	const fallback = "210"; // Blue theme as configured in config.ts
 	const configCarrier = document.getElementById("config-carrier");
 	return Number.parseInt(configCarrier?.dataset.hue || fallback);
 }

@@ -1,0 +1,1 @@
+console.log('Current --page-bg:', getComputedStyle(document.body).getPropertyValue('--page-bg')); console.log('Current body bg:', getComputedStyle(document.body).backgroundColor); console.log('Current html bg:', getComputedStyle(document.documentElement).backgroundColor);
